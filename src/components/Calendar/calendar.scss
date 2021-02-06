@@ -1,0 +1,82 @@
+.calendar {
+    .react-calendar {
+        width: 397px;
+        height: 340px;
+        padding: 20px 75px;
+        background: #0C0B0B;
+        border-radius: 10px;
+        &__tile--now {
+            background: #7BA2ED;
+            border-radius: 50%;
+        }
+        &__tile--active {
+            background: #7BA2ED;
+            border-radius: 50%;
+        }
+        &__navigation {
+            justify-content: center;
+            &__label {
+                pointer-events: none;
+            }
+            &__prev2-button {
+                display: none;
+            }
+            &__next2-button {
+                display: none;
+            }
+            &__prev-button {
+                font-size: 20px;
+                color: #fff;
+                &:hover {
+                    background: unset !important;
+                }
+                &:focus {
+                    background: unset !important;
+                }
+            }
+            &__next-button {
+                font-size: 20px;
+                color: #fff;
+                &:hover {
+                    background: unset !important;
+                }
+                &:focus {
+                    background: unset !important;
+                }
+            }
+            &__label {
+                flex-grow: unset !important;
+                font-size: 16px;
+                color: #fff;
+                //text-transform: capitalize;
+                &:hover {
+                    background: none !important;
+                }
+            }
+        }
+        &__month-view {
+            &__days__day {
+                color: #A9D3AB;
+                font-weight: 500;
+                width: 32px;
+                height: 32px;
+                padding: 0;
+                &:hover {
+                    background: unset !important;
+                }
+                &--neighboringMonth {
+                    color: #3C3844;
+                    font-weight: 500;
+                }
+            }
+            &__weekdays {
+               color: #fff; 
+                abbr[title] {
+                    border-bottom: none !important;
+                    cursor: inherit !important;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}

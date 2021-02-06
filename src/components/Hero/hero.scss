@@ -1,0 +1,102 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.hero {
+  @include componentWrapper;
+  background-color: #161616;
+  &-container {
+    @include container;
+    display: block;
+    background: url("../../assets/images/bg-layer.png") no-repeat center;
+    background-size: contain;
+    padding-bottom: 220px;
+  }
+
+  &-info-1 {
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+
+    &-text {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #ffffff;
+      h1 {
+        font-size: 50px;
+        line-height: 61px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 33px 0;
+      }
+      button {
+        width: 226px;
+        height: 64px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        background-color: #717CFF;
+        color: #ffffff;
+      }
+    }
+    &-img {
+      width: 55%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &-info-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    &-img {
+      width: 60%;
+    }
+    &-text {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 61px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 33px 0;
+      }
+      button {
+        width: 226px;
+        height: 64px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        background-color: #FFFFFF;
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1250px) {
+  .sign-up {
+    &-text {
+      h3 {
+        width: 95%;
+      }
+    }
+  }
+}

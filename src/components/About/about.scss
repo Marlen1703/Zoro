@@ -1,0 +1,58 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.about {
+  @include componentWrapper;
+  &-container {
+    @include container;
+    display: block;
+    padding: 54px 0 85px 0;
+  }
+  &-title {
+    max-width: 764px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      line-height: 59px;
+    }
+    span {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #0047FD;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    &-left {
+      width: 40%;
+      blockquote {
+        font-style: italic;
+        font-size: 22px;
+        line-height: 28px;
+      }
+      figcaption {
+        margin-top: 23px;
+        font-size: 20px;
+        line-height: 24px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    &-right {
+      width: 55%;
+      display: flex;
+      align-content: center;
+    }
+  }
+  &-partnership {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 78px;
+  }
+}

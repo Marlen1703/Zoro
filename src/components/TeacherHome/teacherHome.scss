@@ -1,0 +1,110 @@
+@import '../../assets/styles/mixins.scss';
+
+.teacher-home {
+    @include componentWrapper;
+    &-container {
+        @include container;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-classes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    &-ce {
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        margin-bottom: 90px;
+        &-menu {
+            list-style: none;
+            width: 398px;
+            height: 50px;
+            background: #000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #7A7585;
+            font-weight: 600;
+            font-size: 18px;
+            li {
+                padding: 9px 25px;
+                width: 130px;
+                text-align: center;
+            }
+            &-selected {
+                background: #648CD9;
+                border-radius: 10px;
+                color: #EEECF1;
+            }
+        }
+        &-events {
+            margin-top: 30px;
+            h3 {
+                font-weight: bold;
+                font-size: 24px;
+                color: #3C3844;
+            }
+        }
+    }
+}
+
+@media (max-width: 1125px) {
+    .teacher-home {
+        &-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 720px) {
+    .teacher-home {
+        &-classes {
+            width: 100%;
+            .card-course {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .teacher-home {
+        .card-course {
+            &-img {
+                display: none;
+            }
+            &-info {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 440px) {
+    .teacher-home {
+        &-ce {
+            width: 100%;
+            &-menu {
+                width: 100%;
+                li {
+                    padding: 11px 8px;
+                }
+            }
+            .react-calendar {
+                padding: 10px 20px !important;
+                width: 100%;
+            }
+            &-events {
+                width: 100%;
+                .card-event {
+                    width: 100%;
+                    &-icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.card-event {
+    width: 389px;
+    height: 144px;
+    background: #17151C;
+    border-radius: 10px;
+    border-left: 8px solid #C8372D;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            color: #EEECF1;
+        }
+        span {
+            font-size: 16px;
+            color: #9590A0;
+            margin-bottom: 12px;
+        }
+        div {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #000;
+        }
+    }
+    &-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #C8372D;
+        position: absolute;
+        top: 18px;
+        right: 16px;
+    }
+}

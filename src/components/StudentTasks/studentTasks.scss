@@ -1,0 +1,82 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/variables.scss';
+
+.student-tasks {
+    @include componentWrapper;
+    &-container {
+        @include container;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-menu {
+        list-style: none;
+        margin-top: 23px;
+        li {
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 40px;
+            cursor: pointer;
+            &:hover {
+                color: $primary;
+            }
+        }
+        &-selected {
+            color: $primary;
+            position: relative;
+            &::after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 100%;
+                background: $primary;
+                position: absolute;
+                top: 27px;
+            }
+        }
+    }
+    &-sort {
+        position: relative;
+        width: 810px;
+        margin-top: 52px;
+        &-drop {
+            @include dropDown;
+        }
+    }
+    &-tasks {
+        display: flex;
+        flex-direction: column;
+        .card-task {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .student-tasks {
+        &-sort {
+            width: 100%;
+        }
+        &-tasks {
+            width: 100%;
+            .card-task {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 590px) {
+    .student-tasks {
+        &-menu {
+            width: 100%;
+            li {
+                display: list-item;
+                margin-bottom: 20px;
+            }
+            &-selected {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

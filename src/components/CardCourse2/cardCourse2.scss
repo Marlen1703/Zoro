@@ -1,0 +1,24 @@
+.card-course2 {
+    width: 296px;
+    height: 110px;
+    background: #17151C;
+    border-radius: 10px;
+    border-left: 8px solid #C8372D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    span {
+        margin-left: 32px;
+        &:first-child {
+            font-weight: 600;
+            font-size: 20px;
+            color: #EEECF1;
+        }
+        &:last-child {
+            font-size: 16px;
+            color: #9590A0;
+            margin-top: 7px;
+        }
+    }
+}

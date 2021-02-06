@@ -1,0 +1,56 @@
+{
+    "signIn": {
+        "welcome": "Welcome back",
+        "login": "Login to your account",
+        "password": "Password",
+        "remember": "Remember me",
+        "forgot": "Forgot password?",
+        "signIn": "Sign In",
+        "school": "Your school is in your pocket now"
+    },
+    "signUp": {
+        "welcome": "Welcome",
+        "signUp": "Sign up new account",
+        "name": "Full name",
+        "confirm": "Confirm password",
+        "username": "Username",
+        "agree": "I agree with terms of conditions",
+        "submit": "Sign Up",
+        "quote": "“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” -Malcolm X "
+    },
+    "student": {
+        "home": "Home",
+        "tasks": "Tasks",
+        "settings": "Settings",
+        "grades": "Grades",
+        "today": "Today's Courses",
+        "courses": "Courses",
+        "events": "Events",
+        "upcoming": "Upcoming Events",
+        "todo": "Have to do",
+        "missed": "Completion date missed",
+        "done": "Done",
+        "allClasses": "All classes"
+    },
+    "header": {
+        "why": "Why Studdis?",
+        "solutions": "Solutions",
+        "resources": "Resources",
+        "enterprice": "Enterprice",
+        "contact": "Contact Sales",
+        "login": "Log in",
+        "try": "Try for free"
+    },
+    "profile": {
+        "title": "Profile",
+        "edit": "Edit",
+        "fullName": "Full name",
+        "email": "Email",
+        "changePass": "Change password",
+        "apply": "Apply",
+        "cancel": "Cancel"
+    },
+    "grades": {
+        "all": "All subjects"
+    }
+}

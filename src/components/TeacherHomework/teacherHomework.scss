@@ -1,0 +1,17 @@
+@import '../../assets/styles/mixins.scss';
+
+.teacher-hw {
+    @include componentWrapper;
+    &-container {
+        @include container;
+    }
+    &-classes {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 46px;
+        .card-course2 {
+            margin-right: 16px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.card-course {
+    width: 666px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &-img {
+        width: 137px;
+        height: 76px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        height: 76px;
+        position: relative;
+        width: 100%;
+        h3 {
+            font-size: 23px;
+        }
+        &-topic {
+            font-size: 10px;
+            color: #303030;
+        }
+        &-teacher {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            div {
+                display: flex;
+                &:first-child {
+                    margin-right: 12px;
+                }
+                img {
+                    margin-right: 5px;
+                    object-fit: cover;
+                }
+                span {
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 13px;
+        right: 15px;
+        div {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #545454;
+            margin-bottom: 1px;
+        }
+    }
+}

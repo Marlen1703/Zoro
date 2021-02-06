@@ -1,0 +1,79 @@
+.header-d {
+    width: 100%;
+    height: 72px;
+    background: #0C0B0B;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    &-user {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        position: absolute;
+        right: 33px;
+        &-notifications {
+            margin-right: 30px;
+        }
+        &-info {
+            display: flex;
+            align-items: center;
+            &-ava {
+                width: 48px;
+                height: 48px;
+                border: 2px solid #000000;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 12px;
+            }
+            div {
+                height: 48px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-right: 25px;
+                span:first-child {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                span:last-child {
+                    font-size: 14px;
+                    color: #9590A0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .header-d {
+        .bm-burger-button {
+            left: 10px;
+        }
+        &-user {
+            right: 10px;
+            &-notifications {
+                margin-right: 10px;
+                img {
+                    width: 20px;
+                    object-fit: cover;
+                }
+            }
+            &-info {
+                &-ava {
+                    width: 40px;
+                    height: 40px;
+                }
+                div {
+                    margin-right: 15px;
+                    span:first-child {
+                        font-size: 14px;
+                    }
+                    span:last-child {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
